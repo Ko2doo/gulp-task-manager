@@ -46,6 +46,11 @@
 				}
 			}
 
+			&:nth-child(4){
+				height: rem(119);
+				background-color: lightblue;
+			}
+
 			&-txt{
 				margin-top: rem(12);
 				margin-bottom: rem(8);
