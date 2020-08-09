@@ -8,17 +8,6 @@
 * используется [gulp-file-includer](https://github.com/haoxins/gulp-file-include) для разделения html на компоненты
 * теперь все файлы сразу складываются в папку /builds, все минимизируется и компилируется прям во время верстки.
 
-# Использование gulp-file-includer:
-Предпологается что в папке "src/html" будут находиться необходимые файлы для верстки
-* В папке "section" лежат html компоненты, а в основном файле index.html находятся вызовы этих компонентов.
-
-* Чтобы вызвать html компонент необходимо написать @@include('your_folder/your_file_name.html') пример см. ниже:
-**HTML**
-```HTML
-<body>
-    @@include('sections/header.html')
-</body>
-```
 
 # Установка
 * установите [NodeJS](https://nodejs.org/en/)
@@ -121,6 +110,18 @@ P.S. Полезный ресурс [smart-grid](https://grid4web.ru/)
         width: calc(100% / 12 * 10 - 30px);
     }
 }
+```
+
+# Использование gulp-file-includer:
+Предпологается что в папке "src/html" будут находиться необходимые файлы для верстки
+* В папке "section" лежат html компоненты, а в основном файле index.html находятся вызовы этих компонентов.
+
+* Чтобы вызвать html компонент необходимо написать @@include('your_folder/your_file_name.html') пример см. ниже:
+**HTML**
+```HTML
+<body>
+    @@include('sections/header.html')
+</body>
 ```
 
 # Что внутри папки stylesheets?
